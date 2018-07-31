@@ -11,11 +11,7 @@ let vm = new Vue({
 
         methods: {
 
-            tester: function(name)
-            {
-                console.log(this.name + " is the name!");
-            }
-
+          
         }
 
 })
