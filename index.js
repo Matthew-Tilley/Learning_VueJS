@@ -5,6 +5,7 @@ new Vue({
 
     data: {
         url: "https://www.google.com",
+        name: "Mike P."
     }
 
 })
