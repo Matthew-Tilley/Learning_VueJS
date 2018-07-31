@@ -115,7 +115,7 @@
 
 <div id="app">
 	<form method="post" action="/">
-		<label for="email">Email</label> <input type="email" v-model="email" id="email">
+		<label for="email">Email</label> <input type="email" v-model.lazy="email" id="email">
 		<fieldset>
 			<legend>Interests</legend>
 			<div>
@@ -129,7 +129,7 @@
 			</div>
 		</fieldset>
         <input type="submit" value="Subscribe">
-        <p>You entered: {{email}}.</p>
+        <p>You entered: {{email }}.</p>
 	</form>
 </div>
 
