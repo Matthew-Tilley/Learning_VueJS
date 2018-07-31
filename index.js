@@ -1,21 +1,21 @@
 
-new Vue({
+let vm = new Vue({
     
-    el: "#app",
+        el: "#app",
 
-    data: {
-        url: "https://www.google.com",
-        name: "",
-    },
+        data: {
+            url: "https://www.google.com",
+            name: "",
+        },
 
 
-    methods: {
+        methods: {
 
-        tester: function(name)
-        {
-            console.log(this.name + " is the name!");
+            tester: function(name)
+            {
+                console.log(this.name + " is the name!");
+            }
+
         }
-
-    }
 
 })
