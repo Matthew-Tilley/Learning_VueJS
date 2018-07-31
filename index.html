@@ -16,7 +16,9 @@
             <a v-bind:href="url">GOOGLE</a>
 
             <form>
-                Name: <input type="text" v-bind:value="name">
+                Name: <input    type="text" 
+                                v-bind:value="name"
+                                v-on:change="tester">
             </form>
 
         </div>
