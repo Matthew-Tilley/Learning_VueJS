@@ -118,7 +118,7 @@
 		<label for="email">Email</label> <input type="email" v-model.lazy="email" id="email">
 		<fieldset>
 			<legend>Interests</legend>
-			<div>
+            <div v-for="interest in interests">
 				<input type="checkbox" v-model="selectedInterests" value="Running"> Running
 			</div>
 			
@@ -134,6 +134,7 @@
 	   el: '#app',
 	   data: {
 		   email: '',
+           interests: ["running", "cycling", "swimming"],
            selectedInterests: ["Running"],
 	   }
 	});
