@@ -7,6 +7,10 @@
     <div :style="{border: 'solid 2px black', 'margin-bottom': '30px', fontSize: myFontsize + 'px'}">
         JS object literal bound to style attribute
     </div>
+
+    <div :style="fancyDiv">
+        I'm an object literal in data bound to a style attribute!
+    </div>
   
     
 </div>
@@ -16,7 +20,17 @@
        el: '#app',
        
        data: {
-           myFontsize: 24
+           
+           myFontsize: 24,
+
+           fancyDiv: {
+               backgroundColor: "lightgray",
+               borderRadius: '10px',
+               padding: '10px',
+               marginTop: '30px'
+           }
+
+
        },
 
        
