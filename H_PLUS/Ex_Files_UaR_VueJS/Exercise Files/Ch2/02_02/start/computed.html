@@ -28,17 +28,19 @@
 
        computed: {
 
-           /* tempCelcius: function() {
-               
-               return Math.round( 5/9 * ( this.tempFahrenheit -32 ) );
+           tempCelcius: function() {
 
-           } */
+                console.log("Using the COMPUTED property.")
+                return Math.round( 5/9 * ( this.tempFahrenheit -32 ) );
+
+           }
         },
 
         methods: {
 
             tempCelciusFunc: function() {
                 
+                console.log("Using the METHOD version.")
                 return Math.round( 5/9 * ( this.tempFahrenheit -32 ) );
 
             }
