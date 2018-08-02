@@ -12,7 +12,8 @@
         I'm an object literal in data bound to a style attribute!
     </div>
 
-    <div :style="[fancyDiv, fancierDiv]">
+    <div :style="[fancyDiv, fancierDiv]"    @mouseover="fancierDiv.border='dashed 10px blue'"
+                                            @mouseout="fancierDiv.border='solid 1px black'">
         I am MULTIPLE style objects bound to this thingamajig!!!
     </div>
   
