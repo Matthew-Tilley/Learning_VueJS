@@ -114,7 +114,7 @@
 <script type="text/javascript" src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
 
 <div id="app">    
-    <button v-on:click="msg ='WELCOME' ">Log in</button>        
+    <button v-on:click="welcome">Log in</button>        
 	{{msg}}    
 </div>
 
@@ -122,8 +122,9 @@
     new Vue({
        el: '#app',
        data: {
-           msg: ''           
+           msg: 'BLAH'           
        }
+
     });
 </script>
         
