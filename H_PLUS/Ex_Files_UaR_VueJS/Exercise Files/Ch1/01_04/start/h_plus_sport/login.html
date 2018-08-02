@@ -114,8 +114,8 @@
 <script type="text/javascript" src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
 
 <div id="app">    
-    <button v-if="!loggedIn" v-on:click="welcome">Log in</button>
-    <button v-else="loggedIn" @click="logOut">Log out</button>        
+    <button v-if="!loggedIn" v-on:click="welcome('Matt')">Log in</button>
+    <button v-else="loggedIn" @click="logOut('Matt')">Log out</button>        
 	{{msg}}    
 </div>
 
@@ -128,15 +128,15 @@
        },
 
        methods: {
-           welcome: function() {
+           welcome: function(userName) {
                this.loggedIn = true;
-               this.msg = "Welcome!";
+               this.msg = "Welcome " + userName;
                console.log(this.loggedIn);
            },
 
-           logOut: function() {
+           logOut: function(userName) {
                this.loggedIn = false;
-               this.msg = "So long!"
+               this.msg = "So long " + userName;
            }
 
 
