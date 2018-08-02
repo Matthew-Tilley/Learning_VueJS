@@ -117,6 +117,9 @@
     Got a question for our virtual agent? Just ask!
     <input type="text" v-model="question">
     {{response}}
+    <ul>
+        <li v-for="product in products"></li>
+    </ul>
 </div>
 
 <script>
