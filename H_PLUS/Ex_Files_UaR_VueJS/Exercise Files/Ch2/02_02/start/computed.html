@@ -8,7 +8,7 @@
 
     <input type="text" v-model.number.lazy="tempFahrenheit" > 
     <div>
-    Temperature in Celcius: {{tempCelciusFunc()}}
+    Temperature in Celcius: {{tempCelcius}}
     </div>
 
 </div>
@@ -28,22 +28,22 @@
 
        computed: {
 
-           /* tempCelcius: function() {
+           tempCelcius: function() {
 
                 console.log("Using the COMPUTED property.")
                 return Math.round( 5/9 * ( this.tempFahrenheit -32 ) );
 
-           } */
+           }
         },
 
         methods: {
 
-            tempCelciusFunc: function() {
+            /* tempCelciusFunc: function() {
                 
                 console.log("Using the METHOD version.")
                 return Math.round( 5/9 * ( this.tempFahrenheit -32 ) );
 
-            }
+            } */
 
         }
 
