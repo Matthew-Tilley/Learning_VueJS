@@ -5,13 +5,16 @@
     {{firstName}} {{lastName}}
 </div>
 
+<div>Temperature in Celcius: {{Math.round(5/9 * (tempFahrenheit -32) ) }}</div>
+
 <script>
     var vm = new Vue({
         el: '#app',
+        
         data: {
             firstName: 'Mike',
             lastName: 'Sullivan',
-            
+            tempFahrenheit: 0,
 
 
        }
