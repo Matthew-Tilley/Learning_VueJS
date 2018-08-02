@@ -6,6 +6,8 @@
     <p>
         {{firstName}} {{lastName}}
     </p>
+
+    <div>{{fw}}</div>
 </div>
 
 <script>
@@ -13,7 +15,8 @@
        el: '#app',
        data: {
             firstName: 'Mike',
-            lastName: ""
+            lastName: "", 
+            fw: ["Ember", "React", "Angular"],
 
        }
     });
