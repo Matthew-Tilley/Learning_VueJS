@@ -11,7 +11,7 @@
 </div>
 
 
-<div>{{fw}}</div>
+<div v-for="framework in fw">{{fw}}</div>
 
 <script>
     var vm = new Vue({
@@ -19,7 +19,7 @@
        data: {
             firstName: 'Mike',
             lastName: "", 
-            fw: ["Ember", "React", "Angular"],
+            frameworks: ["Ember", "React", "Angular"],
 
        }
     });
