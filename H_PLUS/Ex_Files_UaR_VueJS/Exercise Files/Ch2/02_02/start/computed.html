@@ -7,7 +7,7 @@
     <!-- {{firstName}} {{lastName}} -->
 
     <input type="text" v-model.number.lazy="tempFahrenheit" > 
-    <div>Temperature in Celcius: {{Math.round(5/9 * (tempFahrenheit -32) ) }}</div>
+    Temperature in Celcius: {{tempCelcius}}
 
 </div>
 
@@ -22,9 +22,16 @@
             firstName: 'Mike',
             lastName: 'Sullivan',
             tempFahrenheit: 0,
+       },
 
+       computed: {
 
-       }
+           tempCelcius: function() {
+               
+               return Math.round( 5/9 * ( tempFahrenheit -32 ) );
+
+           }
+        },
     });
 
 </script>
