@@ -11,6 +11,10 @@
     <div :style="fancyDiv">
         I'm an object literal in data bound to a style attribute!
     </div>
+
+    <div :style="[fancyDiv, fancierDiv]">
+        I am MULTIPLE style objects bound to this thingamajig!!!
+    </div>
   
     
 </div>
@@ -28,6 +32,12 @@
                borderRadius: '10px',
                padding: '10px',
                marginTop: '30px'
+           },
+
+           fancierDiv: {
+               fontFamily: "Arial, Helvetica",
+               border: "solid 1px black",
+               padding: "30px"
            }
 
 
