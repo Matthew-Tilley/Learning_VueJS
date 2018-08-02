@@ -122,12 +122,15 @@
     new Vue({
        el: '#app',
        data: {
-           msg: 'BLAH'           
+           msg: 'BLAH',
+           loggedIn: false,           
        },
 
        methods: {
            welcome: function() {
+               this.loggedIn = true;
                this.msg = "Welcome!";
+               console.log(this.loggedIn);
            }
        }
 
